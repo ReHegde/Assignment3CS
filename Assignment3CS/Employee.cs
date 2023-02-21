@@ -69,13 +69,13 @@ namespace Assignment3
             set { salary = value; }
         }
 
-        // String representation of an object
+       
         public override string ToString()
         {
             return "\nEmployee Id = " + Id + "\nEmployee Name = " + Name + "\nDate of Joining = " + JoiningDate + "\nDepartment = " + Department + "\nBasic Salary = " + Salary;
         }
 
-        //Salary calculation
+      
         public virtual double CalculateSalary()
         {
             return Salary;

@@ -15,10 +15,10 @@ namespace Assignment3
         private int id;
         private String name;
         private Department department;
-        private Date JoiningDt;//Has A kind of relationship
+        private Date JoiningDt;
         private double salary;
 
-        //Default Constructor assining Default values
+       
         public Employees()
         {
             id = 0;
@@ -28,7 +28,7 @@ namespace Assignment3
             salary = 0.0;
         }
 
-        //this is an parameterized constructor 
+     
 
         public Employees(int id, String name, double salary, Date JoiningDt, Department department)
         {

@@ -70,7 +70,7 @@ namespace Assignment3
                         Console.WriteLine(manager);
                         Manager1 manager1 = new Manager1(id, name, new Date(Month, Day, Year), dept, sal);
                         Console.WriteLine(manager1);
-                        //Console.WriteLine("Salary : " + manager.CalculateSalary());
+                       
                         Console.ReadLine();
                     }
                     break;
@@ -106,7 +106,7 @@ namespace Assignment3
                         Console.Write("Enter a month: ");
                         int Month = Convert.ToInt32(Console.ReadLine());
                         if (Month >= 1 && Month <= 12)
-                        { //Month validation
+                        { 
                             Console.WriteLine("Month valid");
                         }
                         else

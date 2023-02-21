@@ -14,11 +14,7 @@ namespace Assignment3
         private double Grosssalary = 0.0;
 
 
-        //Calling base class No parameter Constructor 
-
-        //Calling base class's parameterized Constructor 
-        //and passing parameters of base class(Employee)
-        //Using Base class Constructor
+        
 
         public Manager(int id, String name, Date JoiningDt, Department department, double salary)
             : base(id, name, salary, JoiningDt, department)
@@ -40,13 +36,13 @@ namespace Assignment3
         public double PetrolAllowance1 { get => PetrolAllowance; set => PetrolAllowance = value; }
 
 
-        //Ovrriding CalculateSalary() method of base class(Enployee)
+       
         public override double CalculateSalary()
         {
             Grosssalary = base.Salary + (base.Salary * PetrolAllowance1) + (base.Salary * Food_Allowance) + (base.Salary * Other_Allowance);
             return Grosssalary;
         }
-        //Overriding ToString Method for string representation of an object
+      
         public override string ToString()
         {
             return base.ToString() + "\nPetrol Allowance = " + PetrolAllowance1 + "\nFood Allowance = " + Food_Allowance + "\nOther Allowance = " + Other_Allowance + "\nGross Salary = " + CalculateSalary();

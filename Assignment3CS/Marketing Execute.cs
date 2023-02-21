@@ -32,7 +32,6 @@ namespace Assignment3
             return TotalSalary;
         }
 
-        //Overriding ToString Method for string representation of an object
         public override string ToString()
         {
             return ToString() + "\nKilometers Travelled = " + KilometersTravelled1 + "\nTour Allowance = " + Tourallow + "\nTelephone Allowances =" + telephoneallow + "\nTotal Salary = " + CalculateSalary();

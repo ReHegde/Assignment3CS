@@ -19,7 +19,7 @@ namespace Assignment3
             this.year = year;
         }
 
-        //Properties for the Date class Members
+       
 
         public int Day
         {
